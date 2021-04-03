@@ -98,7 +98,7 @@ span:lang(en){
 	position: relative;
 	top: .8rem;
 }
-.m-title-style h4{
+.m-title-style p{
 	font-size: var(--h4-size);
 	font-weight: normal;
 	padding: 2rem 0;
@@ -209,12 +209,12 @@ header{
 	width: 40px;
 	padding-right: 5px;
 }
-.logo h1{
+.logo p{
 	font-size: 1.125rem;
 	font-weight: bold;
 	color: var(--darkBg-color);
 }
-.logo:hover h1{
+.logo:hover p{
 	color: var(--pink-color);
 }
 .menu ul{
@@ -282,7 +282,7 @@ header{
 	font-size: var(--h1-size);
 	margin: 0 0 2rem 0;
 }
-.banner-content h3{
+.banner-content p{
 	font-size: var(--h3-size);
 	font-weight: initial;
 	margin-bottom: 4rem;
@@ -371,25 +371,28 @@ header{
 	border-radius: 50%;
 	margin-bottom: 10px;
 }
-.teachers-experience-content h3{
-	padding: .5rem 0 1rem 0;
-}
-.teachers-tag,.teachers-experience-content p{
+
+.teachers-experience-content h3,.teachers-experience-content p{
 	font-size: var(--p-size);
 	color: var(--gray-color);
 	padding-bottom: .5rem;
 }
-.teachers-experience-content p a{
-	font-weight: bold;
-	color: var(--pink-color);
+.teachers-experience-content .teachers-name{
+	display: block;
+	font-size: var(--h3-size);
+	padding: 1rem 0 0.5rem 0;
 }
-.teachers-experience .teachers-tag:after{
+.teachers-experience-content .teachers-tags:after{
 	content: '';
 	display: block;
 	width: 40px;
 	height: 2px;
 	background-color: var(--pink-color);
 	margin-top: .4rem;
+}
+.teachers-experience-content p a{
+	font-weight: bold;
+	color: var(--pink-color);
 }
 .teachers-otherLesson-title{
 	font-size: var(--p-size);
@@ -402,10 +405,10 @@ header{
 	white-space: nowrap;
 	margin-right: 1rem;
 }
-.teachers-otherLesson-title hr{
-	  display: inline-block;
-		font-size: 0;
-    width: 100%;
+.teachers-otherLesson-title .line{
+	flex-grow: 1;
+	height: 1px;
+	background-color: var(--light-gray-color);
 }
 /* teacher end */
 
@@ -441,7 +444,7 @@ header{
 	color: var(--white-color);
 	position: relative;
 }
-.short-lessons-content h4{
+.short-lessons-content h3{
 	font-size: var(--h4-size);
 	font-weight: bold;
 	padding-bottom: 1.5rem;
@@ -698,7 +701,7 @@ footer.bg-shape:before{
 	background-color: initial;
 	margin-bottom: 4rem;
 }
-.footer-menu h2{
+.footer-menu h3{
 	color: var(--white-color);
 	font-size: var(--h5-size);
 	padding-bottom: 1rem;
