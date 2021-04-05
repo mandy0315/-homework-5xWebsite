@@ -1,0 +1,219 @@
+@media screen and (max-width: 376px){
+  [class*="col"]{
+    padding: 0px;
+  }
+  .footer-logo,.company-address{
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 640px){
+  .recent-lessons h3{
+    text-align: center;
+  }
+  .recent-lessons .row,.study-method-content,.together-5x-content .row,.classic-article-content .row,.company-informatin,.footer-menu{
+    margin: 0 5rem;
+  }
+  .footer-logo,.company-address{
+    margin: 0 15px;
+  }
+}
+@media screen and (min-width: 768px){
+  .advantage-content > li:last-child,.recent-lessons > .row > li:last-child,.study-method-content > li:last-child,.classic-article-content > .row > a:last-child{
+    margin: 0 auto 2rem auto;
+  }
+  .recent-lessons .row,.study-method-content,.together-5x-content .row,.classic-article-content .row{
+    margin: 0;
+  }
+  .teachers-address > picture{
+    width: 30%;
+  }
+  .teachers-address-content{
+    width: 70%;
+    padding-left: 2rem;
+  }
+  .teachers-community-link{
+    justify-content: flex-start;
+  }
+  .teachers-address-content h3{
+    text-align: left;
+  }
+  .teachers-tags:after{
+    margin-left: inherit;
+  }
+  .teachers-title{
+    width: 85%;
+  }
+  .teachers-address > picture {
+    width: 25%;
+  }
+  .short-lessons > div{
+	  width: 80%;
+    margin: auto;
+  }
+  .footer-bg .company-informatin{
+    width: 40%;
+    display: block;
+    float: left;
+  }
+  .footer-bg .footer-menu{
+    width: 60%;
+  }
+  .company-informatin,.footer-menu{
+    margin: 0px;
+    padding: 1.5rem 0;
+  }
+  .footer-copyright span{
+    display: inline;
+  }
+}
+@media screen and (min-width: 992px){
+  .container{
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px){
+  .container{
+    width: 100%;
+  }
+  .logo-box span{
+    display: inline-block;
+  }
+  .menu-trigger{
+    display: none;
+  }
+  .menu{
+    top: 0;
+    z-index: 10;
+    background: transparent;
+    width: auto;
+    box-shadow: none;
+    left: initial;
+    right: 1.5rem;
+  }
+  .menu a{
+    display: inline-block;
+    position: relative;
+  }
+  /* menu 線條動畫 */
+  .menu a::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    right: 0px;
+    width: 0px;
+    height: 4px;
+    background-color: var(--pink-color);
+    display: block;
+    margin: 0px auto;
+    transition: width 0.4s;
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
+    -ms-webkit-transition: width 0.4s;
+  }
+  .menu a:hover::after{
+    width: 100%;
+  }
+  picture{
+    height: 210px;
+  }
+  .big-title h2{
+    font-size: var(--h2-size)
+  }
+  .bg-shape-up:before,.bg-shape-down:after{
+    clip-path: polygon(30% 0px, 0px 100%, 100% 100%);
+  }
+  .banner{
+    clip-path: polygon(0px 0px, 100% 0px, 100% 77%, 35% 100%, 0px 77%);
+  }
+  .bg-shape-down:after,.study-method.bg-shape-down:after{
+    clip-path: polygon(70% 100%, 0px 0px, 100% 0px);
+  }
+  /* banner */
+  .banner{
+    padding: 12rem 1.25rem;
+  }
+  .banner-content h1{
+    font-size: var(--h1-size);
+  }
+  .banner-content p{
+    font-size: var(--h3-size);
+    margin-bottom: 4rem;
+  }
+  .banner-content p{
+    font-size: var(--h3-size);
+  }
+  /* advantage */
+  .advantage-txt h3{
+    font-size: var(--h3-size);
+    margin: .4rem 0;
+  }
+  .advantage-txt br{
+    display: inline-block;
+  }
+  /* teachers */
+  .teachers-title{
+    width: 65%;
+  }
+  .news-content h3,.classic-article-txt h3{
+    font-size: var(--h3-size);
+  }
+  .short-lessons{
+    padding: 5rem 5rem;
+  }
+  .short-lessons > div {
+    width: 50%;
+  }
+  .lessons-bg{
+    padding: 0;
+  }
+  .lessons-title{
+    padding-right: 1.5rem;
+  }
+  .short-lessons-content{
+    padding-left: 1.5rem;
+  }
+  .lessons-tag{
+    font-size: var(--sp-size);
+  }
+  [data-study-img="img"] > h3{
+	  font-size: var(--h2-size);
+  }
+  .recent-lessons h3{
+    text-align: left;
+  }
+  .recent-lessons > .row > li:last-child{
+    margin-bottom: 2rem;
+  }
+  .recent-lessons li[class*="col"],.classic-article-content > .col[class*="col"]{
+    padding: 0 22px;
+  }
+  .recent-lessons li:last-child,.classic-article-content > .col:last-child{
+    padding-right: 15px;
+  }
+  .recent-lessons li:first-child,.classic-article-content .col:first-child{
+    padding-left: 15px;
+  }
+  .recent-lessons .row,.study-method-content,.together-5x-content .row{
+    margin: 0;
+  }
+  .footer-community-link a{
+    padding: 1.25rem;
+  }
+  .footer-menu h2{
+    font-size: var(--h5-size);
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1440px){
+  .col-xxl-2{width: 16.666666%;}
+  .container{
+    width: 100%;
+  }
+  .teachers-name{
+    font-size: var(--h3-size);
+  }
+  .short-lessons{
+    padding: 5rem 10rem;
+  }
+}
